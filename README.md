@@ -143,4 +143,47 @@ This program demonstrates a simple token vault on Solana using the Anchor framew
 
 - **System Program:**
   - Included as `Program<'info, System>` in account contexts to support account creation and funding.
+ 
+----
+# Test Transaction
+=== Starting Deposit Test ===
+
+🔗 Mint Tokens Transaction: https://explorer.solana.com/tx/3PrgGKFAF4Dg5mkGQLs5UsLAATVskF7cxgizQhBYiruGpzSirHA5roUS3eQCQgid8WJdA9fCG38oV42E8PRHyisq?cluster=devnet
+
+💰 Initial Balances:
+        User: 1000 tokens
+        Vault: 0 tokens
+
+🔗 Deposit Transaction: https://explorer.solana.com/tx/PT7ernoNodWyzzFcem6HwFnFEyNqS4EFEJWbMJt9DbF1nChpzt4CPxBaKS6LTRqRKZQhEqpiHNc2fnsbM4F45rZ?cluster=devnet
+
+💰 Final Balances:
+        User: 500 tokens
+        Vault: 500 tokens
+        Amount Deposited: 500 tokens
+✅ Deposit successful
+    ✔ Deposit tokens (3101ms)
+Successfully prevented overdraft deposit
+    ✔ Should fail to deposit more than balance (155ms)
+
+=== Starting Withdrawal Test ===
+
+💰 Initial Balances:
+        User: 500 tokens
+        Vault: 500 tokens
+
+🔗 Withdraw Transaction: https://explorer.solana.com/tx/46TRrpqSnsFdJFwHZRDSoK8RXEZgHqmwupJ2H48HNBooMfup1rc9vhPoYwMbwyemVpDUkqZrsWziLU9duoAWQnve?cluster=devnet
+
+💰 Final Balances:
+        User: 700 tokens
+        Vault: 300 tokens
+        Amount Withdrawn: 200 tokens
+✅ Withdrawal successful
+    ✔ Withdraw tokens (2904ms)
+Successfully prevented overdraft withdrawal
+    ✔ Should fail to withdraw more than vault balance (172ms)
+Successfully prevented unauthorized withdrawal
+    ✔ Should fail when non-authority tries to withdraw (89ms)
+
+
+  6 passing (16s)
 
