@@ -148,12 +148,12 @@ This program demonstrates a simple token vault on Solana using the Anchor framew
 # Test Transaction
   vault-test
 
-=== Setup Starting ===/n
-👤 Using wallet: EmBc2E7FkhfGMyVQZH1b2JY6ysSYCiiMcYhsRKDAAxkw /n
-🪙 Created mint: 6prLtoCZU9FKj6ueEQarSRREJ83WpazoCSsicpuSisFn /n
-🔐 Vault PDA: FEojnEEVjY24rjiFF233z9ok7BRY8YvquP5T3Yc4y6xk /n
-👛 User token account: 8T2TGcudFnr6dv2CJTYYrsfPsakKyNkcJredgt2JTVtr /n
-🏦 Vault token account: AtTDGhu84mABGBBzmvJ3tmmLJ6Hky7Y5CtxzoMXUdMW /n
+=== Setup Starting ===\n
+👤 Using wallet: EmBc2E7FkhfGMyVQZH1b2JY6ysSYCiiMcYhsRKDAAxkw \n
+🪙 Created mint: 6prLtoCZU9FKj6ueEQarSRREJ83WpazoCSsicpuSisFn \n
+🔐 Vault PDA: FEojnEEVjY24rjiFF233z9ok7BRY8YvquP5T3Yc4y6xk \n
+👛 User token account: 8T2TGcudFnr6dv2CJTYYrsfPsakKyNkcJredgt2JTVtr \n
+🏦 Vault token account: AtTDGhu84mABGBBzmvJ3tmmLJ6Hky7Y5CtxzoMXUdMW \n
 === Setup Complete ===
 === Starting Deposit Test ===
 
